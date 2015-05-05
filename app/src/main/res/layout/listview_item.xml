@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="170dp"
+        android:id="@+id/iv_contact_image"
+        android:focusableInTouchMode="true"
+        android:contentDescription="contactImage" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/contactName"
+            android:ems="10"
+            android:id="@+id/contactName"
+            android:hint="contactName" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactNumber"
+            android:text="@string/contactNumber"
+            android:hint="contactNumber"
+            android:layout_marginTop="0dp"
+            android:inputType="phone" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactEmail"
+            android:layout_marginTop="0dp"
+            android:text="@string/contactEmail"
+            android:hint="contactEmail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactAddress"
+            android:layout_marginTop="0dp"
+            android:text="Address"
+            android:hint="@string/contactAddress"
+            android:inputType="textPostalAddress" />
+    </LinearLayout>
+
+</LinearLayout>
